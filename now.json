@@ -1,0 +1,1 @@
+{"version":2,"name":"statickit-site","builds":[{"src":"package.json","use":"@now/static-build"}]}
