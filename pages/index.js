@@ -3,7 +3,22 @@ import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import CodeBlock from '../components/code_block';
+import useForm from '../components/use_form';
 import '../styles/main.css';
+
+function OptInForm() {
+  const [ submitting, succeeded, errors, submit ] = useForm('0858b1a135b0');
+
+  return (
+    <form onSubmit={submit} className="max-w-sm">
+      <div className="pb-2 flex items-center">
+        <input type="email" name="email" className="input-field block w-full" placeholder="Your email address" required />
+        <input type="submit" name="submit" className="btn" value="Notify me" disabled={submitting} />
+      </div>
+      <div className="font-bold text-red-600 text-sm"></div>
+    </form>
+  );
+}
 
 export default () => {
   const sampleCode = `
@@ -21,8 +36,8 @@ function MyForm() {
 
   return (
     <form onSubmit={submit}>
-      <input type="email" name="email" placeholder="me@example.com" required>
-      <input type="submit" name="submit" value="Notify me" disabled={submitting}>
+      <input type="email" name="email" placeholder="me@example.com" required />
+      <input type="submit" name="submit" value="Notify me" disabled={submitting} />
     </form>
   );
 }
@@ -52,13 +67,7 @@ function MyForm() {
 
               <p className="pb-6 text-lg text-gray-700">Architected for developer happiness. <br className="hidden sm:block"/>Launching in July 2019 🚀</p>
 
-              <form id="opt-in-form" className="max-w-sm">
-                <div className="pb-2 flex items-center">
-                  <input type="email" name="email" className="input-field block w-full" placeholder="Your email address" required />
-                  <input type="submit" name="submit" className="btn" value="Notify me" disabled />
-                </div>
-                <div data-sk-error="email" className="font-bold text-red-600 text-sm"></div>
-              </form>
+              <OptInForm />
             </div>
 
             <div className="px-6 w-full sm:w-1/2 xl:w-3/5">
