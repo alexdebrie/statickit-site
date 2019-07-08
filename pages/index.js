@@ -21,7 +21,7 @@ function MyForm() {
 
   return (
     <form onSubmit={submit}>
-      <input type="email" name="email" value="" required>
+      <input type="email" name="email" placeholder="me@example.com" required>
       <input type="submit" name="submit" value="Notify me" disabled={submitting}>
     </form>
   );
