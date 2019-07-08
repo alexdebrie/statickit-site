@@ -1,1 +1,6 @@
-{"version":2,"name":"statickit-site","builds":[{"src":"package.json","use":"@now/static-build"}]}
+{
+  "version": 2,
+  "name": "statickit-site",
+  "scope": "statickit",
+  "builds": [{"src":"package.json", "use":"@now/static-build"}]
+}
