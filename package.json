@@ -5,8 +5,16 @@
     "now-dev": "next -p $PORT"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-svg": "^10.0.10",
+    "react-syntax-highlighter": "^11.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "cssnano": "^4.1.10",
+    "tailwindcss": "^1.0.4"
   }
 }

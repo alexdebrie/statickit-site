@@ -1,0 +1,45 @@
+@tailwind base;
+
+@tailwind components;
+
+.btn {
+  @apply text-white font-bold border border-indigo-600 bg-indigo-600 px-4 py-3 cursor-pointer leading-tight rounded-lg;
+}
+
+.btn:focus {
+  @apply outline-none border-indigo-800;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.input-field {
+  @apply mr-2 px-4 py-3 border border-gray-200 bg-gray-200 rounded-lg leading-tight;
+}
+
+.input-field:focus {
+  @apply bg-white border-gray-500 outline-none;
+}
+
+@tailwind utilities;
+
+.inline-code {
+  @apply bg-gray-300 rounded-full px-2 text-sm;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.bg-code {
+  background-color: #282a36;
+}

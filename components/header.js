@@ -1,5 +1,11 @@
+import ReactSVG from 'react-svg'
+
 export default () => (
-  <header>
-    <h1>Static Next.js Example on Now 2.0</h1>
+  <header className="mx-auto container px-6 py-4">
+    <div className="flex items-center h-10">
+      <a href="/" className="mr-8 block flex-shrink-0">
+        <ReactSVG src="/static/logo.svg" />
+      </a>
+    </div>
   </header>
 )
