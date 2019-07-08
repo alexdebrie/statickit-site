@@ -17,7 +17,7 @@ export default () => (
 
           <form id="opt-in-form" className="max-w-sm">
             <div className="pb-2 flex items-center">
-              <input type="email" name="email" value="" className="input-field block w-full" placeholder="Your email address" required />
+              <input type="email" name="email" className="input-field block w-full" placeholder="Your email address" required />
               <input type="submit" name="submit" className="btn" value="Notify me" disabled />
             </div>
             <div data-sk-error="email" className="font-bold text-red-600 text-sm"></div>
