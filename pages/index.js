@@ -114,7 +114,7 @@ function MyForm() {
               </h1>
 
               <p className="pb-6 text-lg text-gray-700">
-                Architected for developer happiness.{' '}
+                Architected for developer happiness.
                 <br className="hidden sm:block" />
                 Launching in July 2019 🚀
               </p>
