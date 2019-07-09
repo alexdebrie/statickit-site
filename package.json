@@ -6,7 +6,7 @@
     "prettier": "npx prettier --write '{components,pages}/**/*.js'"
   },
   "engines": {
-    "node": "~8.10.x"
+    "node": "10.x"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
