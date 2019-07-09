@@ -31,7 +31,7 @@ export default function OptInForm() {
           <button
             type="submit"
             name="submit"
-            className="block btn"
+            className="block btn focus:shadow-outline"
             disabled={submitting}
           >
             Notify me

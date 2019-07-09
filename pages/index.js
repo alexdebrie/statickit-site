@@ -12,16 +12,16 @@ export default () => (
       <Head>
         <meta
           property="og:title"
-          content="Batteries-included React components"
+          content="Drop-in components for static sites"
         />
         <meta property="og:locale" content="en_US" />
         <meta
           name="description"
-          content="StaticKit is a suite of React components with a server backend included."
+          content="StaticKit is a collection of React components backed by pre-built APIs, so you can stop reinventing the wheel."
         />
         <meta
           property="og:description"
-          content="StaticKit is a suite of React components with a server backend included."
+          content="StaticKit is a collection of React components backed by pre-built APIs, so you can stop reinventing the wheel."
         />
         <link rel="canonical" href="https://statickit.com/" />
         <meta property="og:url" content="https://statickit.com/" />
@@ -32,7 +32,7 @@ export default () => (
         />
       </Head>
 
-      <Header pageTitle="Batteries-included React components" />
+      <Header pageTitle="Drop-in components for static sites" />
 
       <div className="mx-auto pt-16 container">
         <div className="pb-16 sm:pb-32 flex flex-wrap">
@@ -43,11 +43,11 @@ export default () => (
               </span>
             </div>
             <h1 className="pb-6 text-5xl font-semibold leading-tight tracking-snug">
-              Batteries-included React components
+              Drop-in components for static sites
             </h1>
 
             <p className="pb-6 pr-24 text-lg text-gray-700">
-              StaticKit is a suite of React components with a server backend included.
+              StaticKit is a collection of React components backed by pre-built APIs, so you can stop reinventing the wheel.
             </p>
 
             <OptInForm />
