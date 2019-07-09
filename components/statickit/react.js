@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
 function ValidationError(props) {
-  const errorFor = (field, errors) => {
-    return errors.find(error => {
-      return error.field == field;
-    });
-  };
+  const { prefix, field, errors, ...attrs } = props;
 
-  const error = errorFor(props.field, props.errors || []);
+  const error = (errors || []).find(error => {
+    return error.field == field;
+  });
 
   if (!error) {
     return null;
   }
 
   return (
-    <div {...props}>
-      {props.prefix} {error.message}
+    <div {...attrs}>
+      {prefix} {error.message}
     </div>
   );
 }
@@ -53,17 +51,13 @@ function useForm(id) {
               setSucceeded(false);
               break;
           }
-
-          return true;
         });
       })
       .catch(error => {
         setSucceeded(false);
-        return true;
       })
       .finally(() => {
         setSubmitting(false);
-        return true;
       });
   };
 
