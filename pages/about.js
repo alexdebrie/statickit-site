@@ -1,6 +1,6 @@
-import { Component } from 'react'
-import Link from 'next/link'
-import Header from '../components/header'
+import { Component } from 'react';
+import Link from 'next/link';
+import Header from '../components/header';
 
 class AboutPage extends Component {
   render() {
@@ -13,8 +13,8 @@ class AboutPage extends Component {
           </Link>
         </section>
       </main>
-    )
+    );
   }
 }
 
-export default AboutPage
+export default AboutPage;

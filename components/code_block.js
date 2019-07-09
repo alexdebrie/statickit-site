@@ -7,16 +7,14 @@ import PrismJsx from 'prismjs/components/prism-jsx.min';
 
 import '../styles/dracula.css';
 
-export default (props) => {
+export default props => {
   useEffect(() => {
     Prism.highlightAll();
   });
 
   return (
     <pre>
-      <code {...props}>
-        {props.children}
-      </code>
+      <code {...props}>{props.children}</code>
     </pre>
-  )
+  );
 };

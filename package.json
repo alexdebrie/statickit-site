@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "now-build": "next build && next export -o dist",
-    "now-dev": "next -p $PORT"
+    "now-dev": "next -p $PORT",
+    "prettier": "npx prettier --write '{components,pages}/**/*.js'"
   },
   "engines": {
     "node": "~8.10.x"
@@ -19,6 +20,7 @@
     "autoprefixer": "^9.6.0",
     "cssnano": "^4.1.10",
     "postcss-easy-import": "^3.0.0",
+    "prettier": "^1.18.2",
     "tailwindcss": "^1.0.4"
   }
 }

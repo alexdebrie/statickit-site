@@ -2,7 +2,7 @@ import ReactSVG from 'react-svg';
 import Link from 'next/link';
 import Head from 'next/head';
 
-export default (props) => (
+export default props => (
   <header className="mx-auto container px-6 py-4">
     <Head>
       <title>{props.pageTitle} · StaticKit</title>
@@ -16,4 +16,4 @@ export default (props) => (
       </Link>
     </div>
   </header>
-)
+);
