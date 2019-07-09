@@ -46,12 +46,12 @@ function MyForm() {
             property="og:description"
             content="Architected for developer happiness. Coming July 2019."
           />
-          <link rel="canonical" href="https://www.statickit.com/" />
-          <meta property="og:url" content="https://www.statickit.com/" />
+          <link rel="canonical" href="https://statickit.com/" />
+          <meta property="og:url" content="https://statickit.com/" />
           <meta property="og:site_name" content="StaticKit" />
           <meta
             property="og:image"
-            content="https://www.statickit.com/static/logo-300.png"
+            content="https://statickit.com/static/logo-300.png"
           />
         </Head>
         <Header pageTitle="Simple form hosting for static sites" />
