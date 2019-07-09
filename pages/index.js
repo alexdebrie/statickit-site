@@ -12,16 +12,16 @@ export default () => (
       <Head>
         <meta
           property="og:title"
-          content="Simple form hosting for static sites"
+          content="Batteries-included React components"
         />
         <meta property="og:locale" content="en_US" />
         <meta
           name="description"
-          content="Architected for developer happiness. Coming July 2019."
+          content="StaticKit is a suite of React components with a server backend included."
         />
         <meta
           property="og:description"
-          content="Architected for developer happiness. Coming July 2019."
+          content="StaticKit is a suite of React components with a server backend included."
         />
         <link rel="canonical" href="https://statickit.com/" />
         <meta property="og:url" content="https://statickit.com/" />
@@ -32,7 +32,7 @@ export default () => (
         />
       </Head>
 
-      <Header pageTitle="Simple form hosting for static sites" />
+      <Header pageTitle="Batteries-included React components" />
 
       <div className="mx-auto pt-16 container">
         <div className="pb-16 sm:pb-32 flex flex-wrap">
@@ -43,22 +43,26 @@ export default () => (
               </span>
             </div>
             <h1 className="pb-6 text-5xl font-semibold leading-tight tracking-snug">
-              Simple form hosting <br className="hidden sm:block xl:hidden" />
-              for static sites
+              Batteries-included React components
             </h1>
 
-            <p className="pb-6 text-lg text-gray-700">
-              Architected for developer happiness.
-              <br className="hidden sm:block" />
-              Launching in July 2019 🚀
+            <p className="pb-6 pr-24 text-lg text-gray-700">
+              StaticKit is a suite of React components with a server backend included.
             </p>
 
             <OptInForm />
           </div>
 
           <div className="px-6 w-full sm:w-1/2 xl:w-3/5">
-            <div className="mb-2 p-4 w-full rounded-lg text-sm leading-relaxed overflow-auto bg-code">
-              <ReactDemo />
+            <div className="mb-2 w-full rounded-lg text-sm leading-relaxed overflow-auto bg-code">
+              <div className="flex bg-gray-700 rounded-t">
+                <div className="px-4 py-3 font-bold text-white rounded-tl bg-code">Forms</div>
+                <div className="px-4 py-3 text-gray-300 italic">More coming soon</div>
+              </div>
+
+              <div className="p-4">
+                <ReactDemo />
+              </div>
             </div>
           </div>
         </div>

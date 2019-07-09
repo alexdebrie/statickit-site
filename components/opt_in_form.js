@@ -27,13 +27,16 @@ export default function OptInForm() {
           placeholder="Your email address"
           required
         />
-        <input
-          type="submit"
-          name="submit"
-          className="btn"
-          value="Notify me"
-          disabled={submitting}
-        />
+        <div className="flex-shrink-0">
+          <button
+            type="submit"
+            name="submit"
+            className="block btn"
+            disabled={submitting}
+          >
+            Notify me
+          </button>
+        </div>
       </div>
       <ValidationError
         field="email"
