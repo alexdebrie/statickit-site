@@ -18,14 +18,14 @@ function ValidationError(props) {
   );
 }
 
-function useForm(id) {
+function useForm(id, baseUrl) {
   const [submitting, setSubmitting] = useState(false);
   const [succeeded, setSucceeded] = useState(false);
   const [errors, setErrors] = useState(errors);
 
   const submit = e => {
     const form = e.target;
-    const url = 'https://api.statickit.com/j/forms/' + id + '/submissions';
+    const url = (baseUrl || "https://api.statickit.com") + '/j/forms/' + id + '/submissions';
 
     e.preventDefault();
     setSubmitting(true);

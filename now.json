@@ -3,5 +3,11 @@
   "name": "statickit-site",
   "scope": "statickit",
   "alias": ["statickit.com", "www.statickit.com"],
-  "builds": [{"src":"package.json", "use":"@now/static-build"}]
+  "builds": [{"src":"package.json", "use":"@now/static-build"}],
+  "build": {
+    "env": {
+      "STATICKIT_URL": "https://api.statickit.com",
+      "FORM_ID": "0858b1a135b0"
+    }
+  }
 }
