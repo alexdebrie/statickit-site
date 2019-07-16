@@ -1,13 +1,10 @@
 import { ValidationError, useForm } from '@statickit/react';
 
 export default function OptInForm() {
-  const [submitting, succeeded, errors, submit] = useForm(process.env.FORM_ID, process.env.STATICKIT_URL);
-
-  const errorFor = field => {
-    return errors.find(error => {
-      return error.field == field;
-    });
-  };
+  const [submitting, succeeded, errors, submit] = useForm(
+    process.env.FORM_ID,
+    process.env.STATICKIT_URL
+  );
 
   if (succeeded) {
     return (
