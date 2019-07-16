@@ -9,6 +9,7 @@
     "node": "10.x"
   },
   "dependencies": {
+    "@statickit/react": "github:levelhq/statickit-react",
     "@zeit/next-css": "^1.0.1",
     "next": "latest",
     "prismjs": "^1.16.0",

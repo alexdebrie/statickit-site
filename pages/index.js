@@ -43,7 +43,7 @@ export default () => (
               </span>
             </div>
             <h1 className="pb-6 text-5xl font-semibold leading-tight tracking-snug">
-              Drop-in components for static sites
+              Modern forms for static sites
             </h1>
 
             <p className="pb-6 pr-24 text-lg text-gray-700">
