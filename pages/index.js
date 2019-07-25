@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import OpenGraph from '../components/open_graph';
 import OptInForm from '../components/opt_in_form';
 import ReactDemo from '../components/react_demo';
 import CdnDemo from '../components/cdn_demo';
@@ -45,19 +46,9 @@ function HomePage() {
         <Head>
           <link rel="canonical" href="https://statickit.com/" />
           <meta property="description" content={description} />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content={title} />
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:description" content={description} />
-          <meta property="og:url" content="https://statickit.com/" />
-          <meta property="og:site_name" content="StaticKit" />
-          <meta
-            property="og:image"
-            content="https://statickit.com/static/logo-300.png"
-          />
-          <meta property="og:image:width" content="300" />
-          <meta property="og:image:height" content="300" />
         </Head>
+
+        <OpenGraph title={title} description={description} path="/" />
 
         <Header pageTitle={title} />
 

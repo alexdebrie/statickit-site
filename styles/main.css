@@ -7,7 +7,7 @@
 }
 
 .btn:focus {
-  @apply outline-none border-indigo-800;
+  @apply outline-none border-indigo-900;
 }
 
 .btn:active {
@@ -18,8 +18,24 @@
   @apply opacity-50 cursor-not-allowed;
 }
 
-.btn:active {
-  transform: translateY(1px);
+.btn-sm {
+  @apply px-3 py-2 text-sm rounded;
+}
+
+.btn-xs {
+  @apply px-2 py-1 text-sm rounded;
+}
+
+.btn-outline {
+  @apply bg-white text-indigo-600;
+}
+
+.btn-red-outline {
+  @apply bg-white text-red-600 border-red-600;
+}
+
+.btn-red-outline:focus {
+  @apply outline-none border-red-900;
 }
 
 .input-field {
