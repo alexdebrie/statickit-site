@@ -3,7 +3,7 @@
   "name": "statickit-site",
   "scope": "statickit",
   "alias": ["statickit.com", "www.statickit.com"],
-  "builds": [{"src":"package.json", "use":"@now/static-build"}],
+  "builds": [{"src":"package.json", "use":"@now/next"}],
   "build": {
     "env": {
       "STATICKIT_URL": "https://api.statickit.com",
