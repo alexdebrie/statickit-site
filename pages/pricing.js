@@ -29,7 +29,7 @@ function PricingPage() {
         <div className="mx-auto px-6 pt-16 container">
           <div className="pb-16 md:pt-12 md:pb-24">
             <h1 className="pb-2 text-4xl sm:text-5xl font-semibold leading-tight tracking-snug text-center">Pricing</h1>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Get started for free. No credit card required.</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Free for personal use. No credit card required.</p>
           </div>
 
           <div className="pb-16">
@@ -40,34 +40,31 @@ function PricingPage() {
                     <th></th>
                     <th></th>
                     <th className="whitespace-no-wrap">Personal</th>
-                    <th className="whitespace-no-wrap">Single Site</th>
+                    <th className="whitespace-no-wrap">Business</th>
                   </tr>
-                  <tr className="text-xl md:text-4xl tracking-snug border-b">
+                  <tr className="text-xl md:text-4xl tracking-snug">
                     <th></th>
-                    <th></th>
-                    <th className="pb-3 font-semibold w-1/4 whitespace-no-wrap">$0<span className="text-sm md:text-base font-normal text-gray-700"> / mo</span></th>
-                    <th className="pb-3 font-semibold w-1/4 whitespace-no-wrap">$20<span className="text-sm md:text-base font-normal text-gray-700"> / mo</span></th>
+                    <th className="border-b"></th>
+                    <th className="pb-3 font-semibold w-1/4 whitespace-no-wrap border-b">$0<span className="text-sm md:text-base font-normal text-gray-700"> / mo</span></th>
+                    <th className="pb-3 font-semibold w-1/4 whitespace-no-wrap border-b">$20<span className="text-sm md:text-base font-normal text-gray-700"> / mo</span></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="p-4 border-b w-1/5 md:w-1/3 bg-gray-100 border-r" rowSpan="3">
-                      <h3 className="font-semibold text-base md:text-xl">Usage</h3>
-                      <p className="text-sm text-gray-600 hidden md:block">Limits around types of use.</p>
-                    </td>
+                    <td className="p-4 border-b w-1/5 md:w-1/3" rowSpan="3"></td>
                   </tr>
                   <tr className="text-sm">
-                    <td className="px-4 py-1 pt-4 font-bold">Domains</td>
-                    <td className="px-2 py-1 pt-4 text-center text-gray-700">∞</td>
-                    <td className="px-2 py-1 pt-4 text-center text-gray-700">1</td>
+                    <td className="px-4 py-1 pt-4 font-bold">Usage</td>
+                    <td className="px-2 py-1 pt-4 text-center text-gray-700">Personal Only</td>
+                    <td className="px-2 py-1 pt-4 text-center text-gray-700">Business</td>
                   </tr>
                   <tr className="text-sm border-b">
-                    <td className="px-4 py-1 pb-4 font-bold">Use</td>
-                    <td className="px-2 py-1 pb-4 text-center text-gray-700">Personal only</td>
-                    <td className="px-2 py-1 pb-4 text-center text-gray-700">Commercial</td>
+                    <td className="px-4 py-1 pb-4 font-bold">Domains</td>
+                    <td className="px-2 py-1 pb-4 text-center text-gray-700">∞</td>
+                    <td className="px-2 py-1 pb-4 text-center text-gray-700">1</td>
                   </tr>
                   <tr>
-                    <td className="p-4 border-b w-1/5 md:w-1/3 bg-gray-100 border-r" rowSpan="4">
+                    <td className="py-4 px-5 border-b w-1/5 md:w-1/4 bg-gray-100 border-r" rowSpan="4">
                       <h3 className="font-semibold text-base md:text-xl">Forms</h3>
                       <p className="text-sm text-gray-600 hidden md:block">Gather submissions from your visitors.</p>
                     </td>
@@ -79,7 +76,7 @@ function PricingPage() {
                   </tr>
                   <tr className="text-sm">
                     <td className="px-4 py-1 font-bold">Submissions</td>
-                    <td className="px-2 py-1 text-center text-gray-700">100 / mo</td>
+                    <td className="px-2 py-1 text-center text-gray-700">∞</td>
                     <td className="px-2 py-1 text-center text-gray-700">1,000 / mo</td>
                   </tr>
                   <tr className="text-sm border-b">

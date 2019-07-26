@@ -1,12 +1,12 @@
 import { ValidationError, useForm } from '@statickit/react';
 
 export default function OptInForm() {
-  const [submit, submitting, succeeded, errors] = useForm(
+  const [state, submit] = useForm(
     process.env.FORM_ID,
     process.env.STATICKIT_URL
   );
 
-  if (succeeded) {
+  if (state.succeeded) {
     return (
       <div className="pb-6 text-lg text-gray-700">
         Thank you for signing up!
@@ -29,7 +29,7 @@ export default function OptInForm() {
             type="submit"
             name="submit"
             className="block btn focus:shadow-outline"
-            disabled={submitting}
+            disabled={state.submitting}
           >
             Notify me
           </button>
@@ -38,7 +38,7 @@ export default function OptInForm() {
       <ValidationError
         field="email"
         prefix="Email"
-        errors={errors}
+        errors={state.errors}
         className="font-bold text-red-600 text-sm"
       />
     </form>
