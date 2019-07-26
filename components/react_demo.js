@@ -4,9 +4,9 @@ const code = `
 import { useForm } from '@statickit/react';
 
 function MyForm() {
-  const [submit, submitting, succeeded, errors] = useForm('0858b1a135b0');
+  const [state, submit] = useForm('0858b1a135b0');
 
-  if (succeeded) {
+  if (state.succeeded) {
     return (
       <div>Thank you for signing up!</div>
     )
@@ -15,7 +15,7 @@ function MyForm() {
   return (
     <form onSubmit={submit}>
       <input type="email" name="email" required />
-      <button type="submit" disabled={submitting}>Notify me</button>
+      <button type="submit" disabled={state.submitting}>Notify me</button>
     </form>
   );
 }
