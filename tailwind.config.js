@@ -6,6 +6,23 @@ module.exports = {
       },
       letterSpacing: {
         snug: '-.0125em'
+      },
+      fontFamily: {
+        sans: [
+          'Inter',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          '"Noto Sans"',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"'
+        ]
       }
     }
   },
@@ -13,4 +30,4 @@ module.exports = {
     backgroundColor: ['responsive', 'hover', 'focus', 'active']
   },
   plugins: []
-}
+};

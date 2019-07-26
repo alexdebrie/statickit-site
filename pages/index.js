@@ -41,7 +41,7 @@ function HomePage() {
   };
 
   return (
-    <div className="antialiased text-gray-900">
+    <div className="font-sans antialiased text-gray-900">
       <main>
         <Head>
           <link rel="canonical" href="https://statickit.com/" />
