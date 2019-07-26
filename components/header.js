@@ -21,7 +21,7 @@ export default props => (
           <a className="pl-3">Pricing</a>
         </Link>
 
-        <a href="https://app.statickit.com/" className="ml-6 btn btn-sm btn-outline">Get Started</a>
+        <a href="https://app.statickit.com/" className="ml-6 btn btn-sm btn-outline hidden">Get Started</a>
       </div>
     </div>
   </header>

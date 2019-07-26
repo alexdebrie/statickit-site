@@ -91,10 +91,10 @@ function PricingPage() {
                     <td></td>
                     <td></td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=free" className="btn btn-sm block w-full text-center">Get Started</a>
+                      <a href="https://app.statickit.com/signup?plan=personal" className="btn btn-sm block w-full text-center hidden">Get Started</a>
                     </td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=standard" className="btn btn-sm block w-full text-center">Get Started</a>
+                      <a href="https://app.statickit.com/signup?plan=single-site" className="btn btn-sm block w-full text-center hidden">Get Started</a>
                     </td>
                   </tr>
                 </tbody>
