@@ -34,7 +34,7 @@ function PricingPage() {
 
           <div className="pb-16">
             <div className="w-full overflow-x-scroll sm:overflow-visible">
-              <table className="mb-24 w-full sm:max-w-5xl mx-auto">
+              <table className="mb-16 w-full sm:max-w-5xl mx-auto">
                 <thead>
                   <tr className="text-xs uppercase text-indigo-600">
                     <th></th>
@@ -55,7 +55,7 @@ function PricingPage() {
                   </tr>
                   <tr className="text-sm">
                     <td className="px-4 py-1 pt-4 font-bold">Usage</td>
-                    <td className="px-2 py-1 pt-4 text-center text-gray-700">Personal Only</td>
+                    <td className="px-2 py-1 pt-4 text-center text-gray-700">Personal Use</td>
                     <td className="px-2 py-1 pt-4 text-center text-gray-700">Business</td>
                   </tr>
                   <tr className="text-sm border-b">
@@ -64,8 +64,8 @@ function PricingPage() {
                     <td className="px-2 py-1 pb-4 text-center text-gray-700">1</td>
                   </tr>
                   <tr>
-                    <td className="py-4 px-5 border-b w-1/5 md:w-1/4 bg-gray-100 border-r" rowSpan="4">
-                      <h3 className="font-semibold text-base md:text-xl">Forms</h3>
+                    <td className="py-4 border-b w-1/5 md:w-1/4" rowSpan="3">
+                      <h3 className="font-semibold text-base md:text-lg">Forms</h3>
                       <p className="text-sm text-gray-600 hidden md:block">Gather submissions from your visitors.</p>
                     </td>
                   </tr>
@@ -74,15 +74,10 @@ function PricingPage() {
                     <td className="px-2 py-1 pt-4 text-center text-gray-700">∞</td>
                     <td className="px-2 py-1 pt-4 text-center text-gray-700">∞</td>
                   </tr>
-                  <tr className="text-sm">
-                    <td className="px-4 py-1 font-bold">Submissions</td>
-                    <td className="px-2 py-1 text-center text-gray-700">∞</td>
-                    <td className="px-2 py-1 text-center text-gray-700">1,000 / mo</td>
-                  </tr>
                   <tr className="text-sm border-b">
-                    <td className="px-4 py-1 pb-4 font-bold">Actions</td>
+                    <td className="px-4 py-1 pb-4 font-bold">Submissions</td>
                     <td className="px-2 py-1 pb-4 text-center text-gray-700">∞</td>
-                    <td className="px-2 py-1 pb-4 text-center text-gray-700">∞</td>
+                    <td className="px-2 py-1 pb-4 text-center text-gray-700">1,000 / mo</td>
                   </tr>
                   <tr>
                     <td></td>
