@@ -8,7 +8,7 @@ import '../styles/main.css';
 
 function PricingPage() {
   const title = 'Pricing';
-  const description = 'Free to get started. Fair and simple pricing.';
+  const description = 'Simple, honest pricing. Free for personal use.';
 
   return (
     <div className="font-sans antialiased text-gray-900">
@@ -27,9 +27,9 @@ function PricingPage() {
         <Header pageTitle={title} />
 
         <div className="mx-auto px-6 pt-16 container">
-          <div className="pb-16 md:pt-12 md:pb-24">
+          <div className="pt-6 md:pt-10 pb-12 md:pb-16">
             <h1 className="pb-2 text-4xl sm:text-5xl font-semibold leading-tight tracking-snug text-center">Pricing</h1>
-            <p className="text-lg sm:text-xl text-gray-700 text-center">Free for personal use. No credit card required.</p>
+            <p className="text-lg sm:text-xl text-gray-700 text-center">Simple, honest pricing. Free for personal use.</p>
           </div>
 
           <div className="pb-16">
@@ -39,7 +39,7 @@ function PricingPage() {
                   <tr className="text-xs uppercase text-indigo-600">
                     <th></th>
                     <th></th>
-                    <th className="whitespace-no-wrap">Personal</th>
+                    <th className="whitespace-no-wrap">Individual</th>
                     <th className="whitespace-no-wrap">Business</th>
                   </tr>
                   <tr className="text-xl md:text-4xl tracking-snug">
@@ -77,16 +77,16 @@ function PricingPage() {
                   <tr className="text-sm border-b">
                     <td className="px-4 py-1 pb-4 font-bold">Submissions</td>
                     <td className="px-2 py-1 pb-4 text-center text-gray-700">∞</td>
-                    <td className="px-2 py-1 pb-4 text-center text-gray-700">1,000 / mo</td>
+                    <td className="px-2 py-1 pb-4 text-center text-gray-700">10,000 / mo</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td></td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=personal" className="btn btn-sm block w-full text-center hidden">Get Started</a>
+                      <a href="https://app.statickit.com/signup?plan=individual" className="btn btn-sm block w-full text-center">Join the Beta</a>
                     </td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=single-site" className="btn btn-sm block w-full text-center hidden">Get Started</a>
+                      <a href="https://app.statickit.com/signup?plan=business" className="btn btn-sm block w-full text-center">Join the Beta</a>
                     </td>
                   </tr>
                 </tbody>

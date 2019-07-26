@@ -9,16 +9,7 @@ const code = `
 
 <script>
   window.sk=window.sk||function(){(sk.q=sk.q||[]).push(arguments)};
-
-  sk('form', '#my-form', {
-    id: '0858b1a135b0',
-    onSuccess: function(config) {
-      var h = config.h;
-      var form = config.form;
-      var replacement = h("div", "Thank you for signing up!");
-      form.parentNode.replaceChild(replacement, form);
-    }
-  });
+  sk('form', '#my-form', { id: '0858b1a135b0' });
 </script>
 
 <script defer src="https://js.statickit.com/statickit.js"></script>
