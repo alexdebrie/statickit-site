@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "now-build": "next build && next export -o dist",
+    "now-build": "next build",
     "now-dev": "next -p $PORT",
     "prettier": "npx prettier --write '{components,pages}/**/*.js'"
   },
