@@ -15,7 +15,7 @@ function PricingPage() {
       slug: 'individual',
       name: 'Individual',
       price: '$0',
-      usage: 'Personal Use',
+      usage: 'Personal Use *',
       domains: '∞',
       endpoints: '∞',
       submissions: '∞'
@@ -361,6 +361,11 @@ function PricingPage() {
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            <div className="pb-16 max-w-2xl mx-auto">
+              <h3 className="pb-2 text-lg font-semibold">* How do you define personal use?</h3>
+              <p className="text-gray-600">&ldquo;Personal use&rdquo; includes personal websites and development environments. If your personal website is also where you conduct your business &mdash; for example, if you are a professional blogger or a freelancer &mdash; that would fall under business use.</p>
             </div>
 
             <p className="text-center">
