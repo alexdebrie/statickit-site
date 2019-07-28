@@ -56,13 +56,13 @@ function PricingPage() {
 
         <Header pageTitle={title} />
 
-        <div className="mx-auto px-6 pt-16 container">
+        <div className="mx-auto px-6 pt-12 container">
           <div className="pt-6 md:pt-10 pb-12 md:pb-16">
             <h1 className="pb-2 text-4xl sm:text-5xl font-semibold leading-tight tracking-snug text-center">
               Pricing
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 text-center">
-              Simple, honest pricing. Free for personal use.
+              Free for personal use, affordable for business.
             </p>
           </div>
 
