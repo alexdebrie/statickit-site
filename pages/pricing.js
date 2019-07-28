@@ -34,56 +34,53 @@ function PricingPage() {
 
           <div className="pb-16">
             <div className="w-full overflow-x-scroll sm:overflow-visible">
-              <table className="mb-16 w-full sm:max-w-5xl mx-auto">
+              <table className="mb-16 w-full sm:max-w-2xl mx-auto">
                 <thead>
                   <tr className="text-xs uppercase text-indigo-600">
                     <th></th>
-                    <th></th>
                     <th className="whitespace-no-wrap">Individual</th>
                     <th className="whitespace-no-wrap">Business</th>
+                    <th className="whitespace-no-wrap">Agency</th>
                   </tr>
                   <tr className="text-xl md:text-4xl tracking-snug">
-                    <th></th>
                     <th className="border-b"></th>
                     <th className="pb-3 font-semibold w-1/4 whitespace-no-wrap border-b">$0<span className="text-sm md:text-base font-normal text-gray-700"> / mo</span></th>
                     <th className="pb-3 font-semibold w-1/4 whitespace-no-wrap border-b">$20<span className="text-sm md:text-base font-normal text-gray-700"> / mo</span></th>
+                    <th className="pb-3 font-semibold w-1/4 whitespace-no-wrap border-b">$60<span className="text-sm md:text-base font-normal text-gray-700"> / mo</span></th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td className="p-4 border-b w-1/5 md:w-1/3" rowSpan="3"></td>
-                  </tr>
                   <tr className="text-sm">
-                    <td className="px-4 py-1 pt-4 font-bold">Usage</td>
+                    <td className="px-2 py-1 pt-4 font-bold">Usage</td>
                     <td className="px-2 py-1 pt-4 text-center text-gray-700">Personal Use</td>
+                    <td className="px-2 py-1 pt-4 text-center text-gray-700">Business</td>
                     <td className="px-2 py-1 pt-4 text-center text-gray-700">Business</td>
                   </tr>
                   <tr className="text-sm border-b">
-                    <td className="px-4 py-1 pb-4 font-bold">Domains</td>
+                    <td className="px-2 py-1 pb-4 font-bold">Domains</td>
                     <td className="px-2 py-1 pb-4 text-center text-gray-700">∞</td>
                     <td className="px-2 py-1 pb-4 text-center text-gray-700">1</td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 border-b w-1/5 md:w-1/4" rowSpan="3">
-                      <h3 className="font-semibold text-base md:text-lg">Forms</h3>
-                      <p className="text-sm text-gray-600 hidden md:block">Gather submissions from your visitors.</p>
-                    </td>
+                    <td className="px-2 py-1 pb-4 text-center text-gray-700">10</td>
                   </tr>
                   <tr className="text-sm">
-                    <td className="px-4 py-1 pt-4 font-bold">Endpoints</td>
+                    <td className="px-2 py-1 pt-4 font-bold">Endpoints</td>
+                    <td className="px-2 py-1 pt-4 text-center text-gray-700">∞</td>
                     <td className="px-2 py-1 pt-4 text-center text-gray-700">∞</td>
                     <td className="px-2 py-1 pt-4 text-center text-gray-700">∞</td>
                   </tr>
                   <tr className="text-sm border-b">
-                    <td className="px-4 py-1 pb-4 font-bold">Submissions</td>
+                    <td className="px-2 py-1 pb-4 font-bold">Submissions</td>
                     <td className="px-2 py-1 pb-4 text-center text-gray-700">∞</td>
                     <td className="px-2 py-1 pb-4 text-center text-gray-700">10,000 / mo</td>
+                    <td className="px-2 py-1 pb-4 text-center text-gray-700">100,000 / mo</td>
                   </tr>
                   <tr>
                     <td></td>
-                    <td></td>
                     <td className="p-3">
                       <a href="https://app.statickit.com/signup?plan=individual" className="btn btn-sm block w-full text-center">Join the Beta</a>
+                    </td>
+                    <td className="p-3">
+                      <a href="https://app.statickit.com/signup?plan=business" className="btn btn-sm block w-full text-center">Join the Beta</a>
                     </td>
                     <td className="p-3">
                       <a href="https://app.statickit.com/signup?plan=business" className="btn btn-sm block w-full text-center">Join the Beta</a>
