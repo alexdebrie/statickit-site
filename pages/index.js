@@ -61,7 +61,7 @@ function HomePage() {
                 href="https://app.statickit.com/"
                 className="btn focus:shadow-outline"
               >
-                Join the Beta
+                Create a form
               </a>
             </div>
 

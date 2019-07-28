@@ -11,8 +11,11 @@ export default props => (
     <div className="flex items-center h-10">
       <div className="flex-grow">
         <Link href="/">
-          <a className="mr-8 block flex-shrink-0">
-            <ReactSVG src="/static/logo.svg" />
+          <a className="mr-8 block flex flex-shrink-0">
+            <div class="mr-2">
+              <ReactSVG src="/static/logo.svg" />
+            </div>
+            <div className="text-lg text-indigo-700">β</div>
           </a>
         </Link>
       </div>
@@ -21,7 +24,7 @@ export default props => (
           <a className="pl-3">Pricing</a>
         </Link>
 
-        <a href="https://app.statickit.com/" className="ml-6 btn btn-sm btn-outline">Join the Beta</a>
+        <a href="https://app.statickit.com/" className="ml-6 btn btn-sm btn-outline">Sign up</a>
       </div>
     </div>
   </header>

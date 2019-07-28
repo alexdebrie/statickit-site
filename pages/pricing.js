@@ -107,13 +107,13 @@ function PricingPage() {
                   <tr>
                     <td></td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=individual" className="btn btn-sm block w-full text-center">Join the Beta</a>
+                      <a href="https://app.statickit.com/signup?plan=individual" className="btn btn-sm block w-full text-center">Sign up</a>
                     </td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=single" className="btn btn-sm block w-full text-center">Join the Beta</a>
+                      <a href="https://app.statickit.com/signup?plan=single" className="btn btn-sm block w-full text-center">Sign up</a>
                     </td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=multi" className="btn btn-sm block w-full text-center">Join the Beta</a>
+                      <a href="https://app.statickit.com/signup?plan=multi" className="btn btn-sm block w-full text-center">Sign up</a>
                     </td>
                   </tr>
                 </tbody>
@@ -152,7 +152,7 @@ function PricingPage() {
                   <tr>
                     <td></td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=individual" className="btn btn-sm block w-full text-center">Join the Beta</a>
+                      <a href="https://app.statickit.com/signup?plan=individual" className="btn btn-sm block w-full text-center">Sign up</a>
                     </td>
                   </tr>
                 </tbody>
@@ -189,7 +189,7 @@ function PricingPage() {
                   <tr>
                     <td></td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=single" className="btn btn-sm block w-full text-center">Join the Beta</a>
+                      <a href="https://app.statickit.com/signup?plan=single" className="btn btn-sm block w-full text-center">Sign up</a>
                     </td>
                   </tr>
                 </tbody>
@@ -226,7 +226,7 @@ function PricingPage() {
                   <tr>
                     <td></td>
                     <td className="p-3">
-                      <a href="https://app.statickit.com/signup?plan=multi" className="btn btn-sm block w-full text-center">Join the Beta</a>
+                      <a href="https://app.statickit.com/signup?plan=multi" className="btn btn-sm block w-full text-center">Sign up</a>
                     </td>
                   </tr>
                 </tbody>
