@@ -7,9 +7,10 @@ export default props => (
     <div className="mx-auto container px-6 py-10">
       <div className="flex items-center">
         <div className="flex-grow text-sm text-gray-600">
-          &copy; Level Technologies, LLC
+          <span className="mr-5">&copy; Level Technologies, LLC</span>
+          <a href="https://github.com/levelhq/legal/blob/master/privacy-policy.md" target="_blank" className="text-indigo-600">Privacy Policy</a>
         </div>
-        <div className="mr-3">
+        <div>
           <ReactSVG src="/static/level.svg" />
         </div>
       </div>
