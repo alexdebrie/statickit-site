@@ -1,0 +1,22 @@
+.markdown h1 {
+  @apply mb-6 text-5xl font-semibold text-gray-900 tracking-snug leading-tight;
+}
+
+.markdown h2 {
+  @apply mt-6 mb-4 text-2xl font-semibold text-gray-900 tracking-snug leading-tight;
+}
+
+.markdown {
+  @apply text-gray-800;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply mb-4;
+}
+
+.markdown ul {
+  @apply list-disc;
+}

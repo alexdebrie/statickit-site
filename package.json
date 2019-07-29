@@ -9,6 +9,8 @@
     "node": "10.x"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.1.0",
+    "@next/mdx": "^9.0.2",
     "@statickit/react": "github:levelhq/statickit-react",
     "@zeit/next-css": "^1.0.1",
     "next": "latest",
