@@ -25,7 +25,7 @@ export default props => (
         </Link>
 
         <a
-          href="https://app.statickit.com/"
+          href="https://app.statickit.com/signup"
           className="ml-6 btn btn-sm btn-outline"
         >
           Sign up
