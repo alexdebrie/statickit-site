@@ -15,7 +15,7 @@ function MyForm() {
   return (
     <form onSubmit={submit}>
       <label for="email">Email</label>
-      <input type="email" name="email" required />
+      <input id="email" type="email" name="email" required />
       <button type="submit" disabled={state.submitting}>Notify me</button>
     </form>
   );
