@@ -2,6 +2,7 @@ import CodeBlock from './code_block';
 
 const code = `
 <form id="my-form">
+  <label for="email">Email</label>
   <input type="email" name="email" value="" required />
   <button type="submit">Notify Me</button>
   <div data-sk-error="email"></div>
