@@ -48,14 +48,14 @@ function HomePage() {
 
         <Header pageTitle={title} />
 
-        <div className="mx-auto pt-16 container">
+        <div className="mx-auto pt-8 sm:pt-16 container">
           <div className="pb-16 sm:pb-32 flex flex-wrap">
             <div className="px-6 pb-16 sm:pt-12 sm:pb-0 w-full sm:w-1/2 xl:w-2/5">
               <h1 className="pb-6 text-5xl font-semibold leading-tight tracking-snug">
                 {title}
               </h1>
 
-              <p className="pb-8 pr-24 text-lg text-gray-700">{description}</p>
+              <p className="pb-8 lg:pr-24 text-lg text-gray-700">{description}</p>
 
               <a
                 href="https://app.statickit.com/"

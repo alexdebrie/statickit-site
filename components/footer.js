@@ -4,11 +4,22 @@ import Head from 'next/head';
 
 export default props => (
   <footer className="border-t">
-    <div className="mx-auto container px-6 py-10">
-      <div className="flex items-center">
+    <div className="mx-auto container px-3 py-10">
+      <div className="pb-6 text-sm text-gray-800">
+        <a href="https://jsfiddle.net/user/StaticKit/fiddles/" className="px-3 text-indigo-600">
+          Live Examples
+        </a>
+
+        <Link href="/pricing">
+          <a className="px-3 text-indigo-600">Pricing</a>
+        </Link>
+
+        <a href="https://github.com/levelhq/legal/blob/master/privacy-policy.md" target="_blank" className="px-3 text-indigo-600">Privacy Policy</a>
+      </div>
+
+      <div className="px-3 flex items-center">
         <div className="flex-grow text-sm text-gray-600">
           <span className="mr-5">&copy; Level Technologies, LLC</span>
-          <a href="https://github.com/levelhq/legal/blob/master/privacy-policy.md" target="_blank" className="text-indigo-600">Privacy Policy</a>
         </div>
         <div>
           <ReactSVG src="/static/level.svg" />

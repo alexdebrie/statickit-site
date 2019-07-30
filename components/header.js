@@ -19,9 +19,13 @@ export default props => (
           </a>
         </Link>
       </div>
-      <div className="text-sm">
+      <div className="hidden sm:block text-sm">
+        <a href="https://jsfiddle.net/user/StaticKit/fiddles/" className="px-3">
+          Live Examples
+        </a>
+
         <Link href="/pricing">
-          <a className="pl-3">Pricing</a>
+          <a className="px-3">Pricing</a>
         </Link>
 
         <a
