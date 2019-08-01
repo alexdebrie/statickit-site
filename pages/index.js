@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import Analytics from '../components/analytics';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
@@ -90,6 +91,7 @@ function HomePage() {
         </div>
       </main>
 
+      <Analytics />
       <Footer />
     </div>
   );
