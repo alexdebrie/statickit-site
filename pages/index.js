@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
 import OptInForm from '../components/opt_in_form';
 import ReactDemo from '../components/react_demo';
-import CdnDemo from '../components/cdn_demo';
+import StandaloneDemo from '../components/standalone_demo';
 import '../styles/main.css';
 
 function HomePage() {
@@ -14,7 +14,7 @@ function HomePage() {
   const description =
     'Gather form submissions from your app or static site without writing a line of backend code.';
 
-  const [tab, setTab] = useState(1);
+  const [tab, setTab] = useState(0);
 
   const tabClass = (idx, selected) => {
     if (idx == selected) {
@@ -27,10 +27,9 @@ function HomePage() {
   const tabContent = selected => {
     switch (selected) {
       case 0:
-        return <ReactDemo />;
-
+        return <StandaloneDemo />;
       case 1:
-        return <CdnDemo />;
+        return <ReactDemo />;
       default:
         return '';
     }
@@ -55,7 +54,9 @@ function HomePage() {
                 {title}
               </h1>
 
-              <p className="pb-8 lg:pr-24 text-lg text-gray-700">{description}</p>
+              <p className="pb-8 lg:pr-24 text-lg text-gray-700">
+                {description}
+              </p>
 
               <a
                 href="https://app.statickit.com/"
@@ -69,14 +70,14 @@ function HomePage() {
               <div className="mb-2 w-full rounded-lg text-sm leading-relaxed overflow-auto bg-code">
                 <div className="flex bg-gray-700 rounded-t">
                   <button
-                    className={tabClass(1, tab)}
-                    onClick={() => setTab(1)}
+                    className={tabClass(0, tab)}
+                    onClick={() => setTab(0)}
                   >
                     Plain HTML
                   </button>
                   <button
-                    className={tabClass(0, tab)}
-                    onClick={() => setTab(0)}
+                    className={tabClass(1, tab)}
+                    onClick={() => setTab(1)}
                   >
                     React
                   </button>
