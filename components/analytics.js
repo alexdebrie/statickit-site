@@ -23,7 +23,11 @@ function Script() {
 };
 
 function trackPageView() {
-  fathom('trackPageview');
+  try {
+    fathom('trackPageview');
+  } catch (e) {
+    // swallow the error
+  }
 }
 
 export { Script, trackPageView };
