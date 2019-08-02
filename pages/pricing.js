@@ -41,7 +41,7 @@ function PricingPage() {
   };
 
   return (
-    <div className="font-sans antialiased text-gray-900">
+    <div>
       <main>
         <Head>
           <link rel="canonical" href="https://statickit.com/pricing" />

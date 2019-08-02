@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-export default function() {
+function Script() {
   const scriptContents = `
   (function(f, a, t, h, o, m){
   a[h]=a[h]||function(){
@@ -21,3 +21,9 @@ export default function() {
     </Fragment>
   );
 };
+
+function trackPageView() {
+  fathom('trackPageview');
+}
+
+export { Script, trackPageView };

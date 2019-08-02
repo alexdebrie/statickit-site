@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import Analytics from '../components/analytics';
+import { Script as Analytics } from '../components/analytics';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
@@ -37,7 +37,7 @@ function HomePage() {
   };
 
   return (
-    <div className="font-sans antialiased text-gray-900">
+    <div>
       <main>
         <Head>
           <link rel="canonical" href="https://statickit.com/" />
@@ -91,7 +91,6 @@ function HomePage() {
         </div>
       </main>
 
-      <Analytics />
       <Footer />
     </div>
   );
