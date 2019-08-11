@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import App, { Container } from 'next/app';
 import Router from 'next/router';
-import { Script as Analytics, trackPageView } from '../components/analytics';
+import { loadFathom, trackPageView } from '../components/analytics';
 
-Router.events.on('routeChangeComplete', url => {
-  trackPageView();
-});
+function Layout(props) {
+  const { children } = props;
 
-Router.events.on('routeChangeError', (err, url) => {
-  console.error('Route change error', err, url);
-});
+  useEffect(() => {
+    loadFathom();
+
+    Router.events.on('routeChangeComplete', url => {
+      trackPageView();
+    });
+
+    Router.events.on('routeChangeError', (err, url) => {
+      console.error('Route change error', err, url);
+    });
+  });
+
+  return (
+    <div className="font-sans antialiased text-gray-900">{children}</div>
+  );
+}
 
 class AppWithLayout extends App {
   render() {
@@ -17,10 +29,9 @@ class AppWithLayout extends App {
 
     return (
       <Container>
-        <div className="font-sans antialiased text-gray-900">
+        <Layout>
           <Component {...pageProps} />
-        </div>
-        <Analytics />
+        </Layout>
       </Container>
     );
   }

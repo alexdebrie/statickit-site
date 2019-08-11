@@ -1,34 +1,30 @@
-import { Fragment } from 'react';
+function loadFathom() {
+  if (window.fathom) return;
 
-function Script() {
-  const scriptContents = `
-  (function(f, a, t, h, o, m){
-  a[h]=a[h]||function(){
-      (a[h].q=a[h].q||[]).push(arguments)
+  window.fathom =
+    window.fathom ||
+    function() {
+      (fathom.q = fathom.q || []).push(arguments);
+    };
+
+  const script = document.createElement('script');
+  script.src = '//cdn.usefathom.com/tracker.js';
+  script.id = 'fathom-script';
+  document.body.appendChild(script);
+
+  script.onload = () => {
+    window.fathom('set', 'siteId', 'RETLQDNO');
+    trackPageView();
   };
-  o=f.createElement('script'),
-  m=f.getElementsByTagName('script')[0];
-  o.async=1; o.src=t; o.id='fathom-script';
-  m.parentNode.insertBefore(o,m)
-  })(document, window, '//cdn.usefathom.com/tracker.js', 'fathom');
-  fathom('set', 'siteId', 'RETLQDNO');
-  fathom('trackPageview');
-  `;
-
-  return (
-    <Fragment>
-      <script dangerouslySetInnerHTML={{ __html: scriptContents }}></script>
-    </Fragment>
-  );
-};
+}
 
 function trackPageView() {
   try {
-    fathom('trackPageview');
+    window.fathom('trackPageview');
   } catch (e) {
     // swallow the error
     console.error(e);
   }
 }
 
-export { Script, trackPageView };
+export { loadFathom, trackPageView };
