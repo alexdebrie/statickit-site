@@ -10,7 +10,7 @@ export default props => (
     </Head>
     <div className="flex items-center h-10">
       <div className="flex-grow">
-        <Link href="/">
+        <Link href="/" prefetch={false}>
           <a className="mr-8 block flex flex-shrink-0">
             <div className="mr-2">
               <ReactSVG src="/static/logo.svg" />

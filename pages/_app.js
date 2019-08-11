@@ -11,29 +11,19 @@ Router.events.on('routeChangeError', (err, url) => {
   console.error('Route change error', err, url);
 });
 
-function Layout(props) {
-  const { children } = props;
-
-  return (
-    <div>
-      <div className="font-sans antialiased text-gray-900">{children}</div>
-      <Analytics />
-    </div>
-  );
-}
-
-class MyApp extends App {
+class AppWithLayout extends App {
   render() {
     const { Component, pageProps } = this.props;
 
     return (
       <Container>
-        <Layout>
+        <div className="font-sans antialiased text-gray-900">
           <Component {...pageProps} />
-        </Layout>
+        </div>
+        <Analytics />
       </Container>
     );
   }
 }
 
-export default MyApp;
+export default AppWithLayout;
