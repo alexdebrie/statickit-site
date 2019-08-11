@@ -27,6 +27,7 @@ function trackPageView() {
     fathom('trackPageview');
   } catch (e) {
     // swallow the error
+    console.error(e);
   }
 }
 

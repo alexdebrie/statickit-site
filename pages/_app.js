@@ -1,24 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import App, { Container } from 'next/app';
 import Router from 'next/router';
 import { Script as Analytics, trackPageView } from '../components/analytics';
 
+Router.events.on('routeChangeComplete', url => {
+  trackPageView();
+});
+
+Router.events.on('routeChangeError', (err, url) => {
+  console.error('Route change error', err, url);
+});
+
 function Layout(props) {
-  useEffect(() => {
-    const handleRouteChange = url => {
-      trackPageView();
-    };
-
-    Router.events.on('routeChangeStart', handleRouteChange);
-
-    return () => {
-      Router.events.off('routeChangeStart', handleRouteChange);
-    };
-  }, []);
+  const { children } = props;
 
   return (
     <div>
-      <div className="font-sans antialiased text-gray-900">{props.children}</div>
+      <div className="font-sans antialiased text-gray-900">{children}</div>
       <Analytics />
     </div>
   );
