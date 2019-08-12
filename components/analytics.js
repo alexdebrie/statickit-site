@@ -1,11 +1,7 @@
 function loadFathom() {
   if (window.fathom) return;
 
-  window.fathom =
-    window.fathom ||
-    function() {
-      (fathom.q = fathom.q || []).push(arguments);
-    };
+  safelyInitializeFathom();
 
   const script = document.createElement('script');
   script.type = 'text/javascript';
@@ -21,11 +17,20 @@ function loadFathom() {
 
 function trackPageView() {
   try {
+    safelyInitializeFathom();
     window.fathom('trackPageview');
   } catch (e) {
     // swallow the error
     console.error(e);
   }
+}
+
+function safelyInitializeFathom() {
+  window.fathom =
+    window.fathom ||
+    function() {
+      (fathom.q = fathom.q || []).push(arguments);
+    };
 }
 
 export { loadFathom, trackPageView };
