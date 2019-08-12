@@ -8,7 +8,8 @@ function loadFathom() {
     };
 
   const script = document.createElement('script');
-  script.src = '//cdn.usefathom.com/tracker.js';
+  script.type = 'text/javascript';
+  script.src = 'https://cdn.usefathom.com/tracker.js';
   script.id = 'fathom-script';
   document.body.appendChild(script);
 

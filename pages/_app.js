@@ -3,19 +3,19 @@ import App, { Container } from 'next/app';
 import Router from 'next/router';
 import { loadFathom, trackPageView } from '../components/analytics';
 
+Router.events.on('routeChangeComplete', url => {
+  trackPageView();
+});
+
+Router.events.on('routeChangeError', (err, url) => {
+  console.error('Route change error', err, url);
+});
+
 function Layout(props) {
   const { children } = props;
 
   useEffect(() => {
     loadFathom();
-
-    Router.events.on('routeChangeComplete', url => {
-      trackPageView();
-    });
-
-    Router.events.on('routeChangeError', (err, url) => {
-      console.error('Route change error', err, url);
-    });
   });
 
   return (
