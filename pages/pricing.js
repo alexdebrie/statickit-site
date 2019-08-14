@@ -50,7 +50,7 @@ function PricingPage() {
             <div className="px-6 py-16 md:w-1/2">
               <h2 className="text-center text-sm uppercase font-bold tracking-wide text-indigo-600">Production</h2>
               <div className="text-center text-4xl md:text-5xl tracking-tight font-semibold">
-                $20
+                $10
                 <span className="text-lg font-normal text-gray-600 tracking-normal">
                   {' '}
                   / site / mo
