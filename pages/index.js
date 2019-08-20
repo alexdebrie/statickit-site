@@ -51,7 +51,7 @@ function HomePage() {
         <div className="mx-auto pt-8 sm:pt-16 container">
           <div className="pb-16 sm:pb-32 flex flex-wrap">
             <div className="px-6 pb-16 sm:pt-12 sm:pb-0 w-full sm:w-1/2 xl:w-2/5">
-              <h1 className="pb-6 text-5xl font-semibold leading-tight tracking-snug">
+              <h1 className="pb-6 text-5xl font-semibold leading-tight tracking-tight">
                 {title}
               </h1>
 
@@ -84,7 +84,7 @@ function HomePage() {
                   </button>
                 </div>
 
-                <div className="p-4">{tabContent(tab)}</div>
+                <div>{tabContent(tab)}</div>
               </div>
             </div>
           </div>

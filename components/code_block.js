@@ -13,7 +13,7 @@ export default props => {
   });
 
   return (
-    <pre>
+    <pre {...props}>
       <code {...props}>{props.children}</code>
     </pre>
   );

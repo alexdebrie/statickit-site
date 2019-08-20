@@ -18,9 +18,7 @@ function Layout(props) {
     loadFathom();
   });
 
-  return (
-    <div className="font-sans antialiased text-gray-900">{children}</div>
-  );
+  return <div className="font-sans antialiased text-gray-900">{children}</div>;
 }
 
 class AppWithLayout extends App {

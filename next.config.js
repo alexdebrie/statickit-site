@@ -10,6 +10,6 @@ module.exports = withMDX(
       STATICKIT_URL: process.env.STATICKIT_URL,
       FORM_ID: process.env.FORM_ID
     },
-    pageExtensions: ['js', 'jsx', 'mdx']
+    pageExtensions: ['js', 'jsx', 'mdx', 'md']
   })
 );

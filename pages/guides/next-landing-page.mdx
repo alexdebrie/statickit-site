@@ -1,0 +1,145 @@
+import withGuide from '../../components/with_guide';
+
+export default withGuide({
+  title: 'Building a Landing Page with StaticKit & Next.js',
+  description:
+    "In this guide, you'll learn how to create a simple landing page to gather email addresses using StaticKit and Next.js"
+});
+
+# Building a Landing Page with StaticKit & Next.js
+
+In this guide, you'll learn how to create a simple landing page to gather email addresses using StaticKit and [Next.js](https://nextjs.org/).
+
+## Step 1: Create a new Next.js project
+
+Run the following command to create a fresh project:
+
+```bash
+npm create next-app next-landing-page
+```
+
+This command will make a new directory, add a `package.json` file with the necessary dependencies and script definitions, and scaffold a sample home page for you.
+
+To boot up your local development server, run the following:
+
+```bash
+cd next-landing-page
+yarn dev
+```
+
+You should see a "Welcome to Next.js" when you open [`http://localhost:3000/`](http://localhost:3000/) in your browser.
+
+## Step 2: Design your landing page
+
+Go ahead and replace the contents of the `pages/index.js` file with the following:
+
+```jsx
+import React from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
+
+const OptInForm = () => {
+  return (
+    <form className="text-gray-800 text-lg">
+      <p className="pb-3 font-bold">Sign up to be notified when we launch.</p>
+
+      <div className="flex flex-wrap items-center">
+        <label htmlFor="email" className="hidden">
+          Email Address
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          name="email"
+          className="flex-grow mr-3 mb-3 p-3 rounded-lg bg-gray-200 text-gray-700 text-lg border border-gray-200 focus:outline-none focus:border-gray-500 focus:bg-white"
+          placeholder="Your email address"
+          required
+        />
+
+        <button
+          type="submit"
+          className="mb-3 px-5 py-3 rounded-lg border border-purple-700 bg-purple-700 text-lg font-bold text-white"
+        >
+          Notify me
+        </button>
+      </div>
+    </form>
+  );
+};
+
+const Home = () => (
+  <div>
+    <Head>
+      <title>Vaporware</title>
+      <link
+        href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet"
+      />
+    </Head>
+
+    <div className="mx-auto container px-8 py-16 sm:py-32 antialiased">
+      <div className="max-w-lg mx-auto">
+        <div className="flex flex-wrap items-center pb-4 text-5xl font-bold text-gray-800">
+          <h1 className="mr-3">Vaporware</h1>
+          <div className="mt-2 px-3 py-1 text-sm font-bold bg-orange-300 text-orange-800 rounded-full">
+            Coming Soon
+          </div>
+        </div>
+
+        <p className="pb-6 text-gray-700 text-lg">
+          Vaporware is a fictitious app that does not yet exist. This is where
+          you&rsquo;d make a compelling pitch for your new product.
+        </p>
+
+        <OptInForm />
+      </div>
+    </div>
+  </div>
+);
+
+export default Home;
+```
+
+Here we are using the [Tailwind CSS](https://tailwindcss.com/) framework to style the page. The `<form>` tag is not yet wired up to anything -- that's coming next!
+
+## Step 3: Create your form in StaticKit
+
+In StaticKit, click "Add a site..." in the top navigation to create a new site for your landing page. Then, click "Add a form..." under your new site to create the form.
+
+## Step 4: Wire up your landing page
+
+From your project directory, run this command:
+
+```bash
+yarn add @statickit/react
+```
+
+Next, import the `useForm` hook and bind the form submit to StaticKit. Be sure to replace `[YOUR FORM ID]` with your actual form ID from StaticKit.
+
+```diff-javascript
+  import React from "react";
+  import Link from "next/link";
+  import Head from "next/head";
++ import { useForm } from "@statickit/react";
+
+  const OptInForm = () => {
++   const [state, submit] = useForm("[YOUR FORM ID]");
+
++	  if (state.succeeded) {
++     return (
++       <p className="pb-3 font-bold text-gray-800 text-lg">
++         Thank you for signing up!
++       </p>
++     );
++   }
+
+    return (
+-     <form>
++     <form onSubmit={submit}>
+        <p className="pb-3 font-bold text-gray-800 text-lg">
+          Sign up to be notified when we launch.
+        </p>
+```
+
+You now have a working landing page!
