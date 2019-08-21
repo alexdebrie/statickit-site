@@ -9,7 +9,7 @@ function GuidesPage() {
   const description = 'Tutorials on how to use StaticKit.';
   const guides = [
     {
-      title: 'Building a Landing Page with StaticKit and Next.js',
+      title: 'Building a Landing Page with Next.js',
       description:
         "In this guide, you'll learn how to create a simple landing page to gather email addresses using StaticKit and Next.js",
       path: '/guides/next-landing-page'
