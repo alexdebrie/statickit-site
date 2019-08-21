@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default props => (
   <Head>
-    <link rel="canonical" href="https://statickit.com/" />
+    <link rel="canonical" href={'https://statickit.com' + props.path} />
     <meta
       property="description"
       content={props.description}

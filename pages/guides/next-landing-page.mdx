@@ -1,14 +1,13 @@
 import withGuide from '../../components/with_guide';
 
 export default withGuide({
-  title: 'Building a Landing Page with StaticKit & Next.js',
+  title: 'Building a Landing Page with StaticKit and Next.js',
   description:
-    "In this guide, you'll learn how to create a simple landing page to gather email addresses using StaticKit and Next.js"
+    "In this guide, you'll learn how to create a simple landing page to gather email addresses using StaticKit and Next.js",
+  path: '/guides/next-landing-page'
 });
 
-# Building a Landing Page with StaticKit & Next.js
-
-In this guide, you'll learn how to create a simple landing page to gather email addresses using StaticKit and [Next.js](https://nextjs.org/).
+In this guide, we'll walk through how to create a simple pre-launch landing page to gather email addresses using [StaticKit](https://statickit.com/) and [Next.js](https://nextjs.org/).
 
 ## Step 1: Create a new Next.js project
 
@@ -24,14 +23,14 @@ To boot up your local development server, run the following:
 
 ```bash
 cd next-landing-page
-yarn dev
+npm run dev
 ```
 
-You should see a "Welcome to Next.js" when you open [`http://localhost:3000/`](http://localhost:3000/) in your browser.
+You should see "Welcome to Next.js" when you open [`http://localhost:3000/`](http://localhost:3000/) in your browser.
 
 ## Step 2: Design your landing page
 
-Go ahead and replace the contents of the `pages/index.js` file with the following:
+Go ahead and replace the contents of the `pages/index.js` file with the following code. We are using the [Tailwind CSS](https://tailwindcss.com/) framework to style the page. The `<form>` tag is not yet wired up to anything — that's coming next!
 
 ```jsx
 import React from 'react';
@@ -101,23 +100,21 @@ const Home = () => (
 export default Home;
 ```
 
-Here we are using the [Tailwind CSS](https://tailwindcss.com/) framework to style the page. The `<form>` tag is not yet wired up to anything -- that's coming next!
-
 ## Step 3: Create your form in StaticKit
 
-In StaticKit, click "Add a site..." in the top navigation to create a new site for your landing page. Then, click "Add a form..." under your new site to create the form.
+In StaticKit, click **Add a site...** in the top navigation to create a new site for your landing page. Then, click **Add a form...** under your new site to create the form.
 
 ## Step 4: Wire up your landing page
 
 From your project directory, run this command:
 
 ```bash
-yarn add @statickit/react
+npm install @statickit/react
 ```
 
 Next, import the `useForm` hook and bind the form submit to StaticKit. Be sure to replace `[YOUR FORM ID]` with your actual form ID from StaticKit.
 
-```diff-javascript
+```diff
   import React from "react";
   import Link from "next/link";
   import Head from "next/head";

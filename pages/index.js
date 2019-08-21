@@ -1,11 +1,8 @@
 import { useState } from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
-import { Script as Analytics } from '../components/analytics';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
-import OptInForm from '../components/opt_in_form';
 import ReactDemo from '../components/react_demo';
 import StandaloneDemo from '../components/standalone_demo';
 import '../styles/main.css';

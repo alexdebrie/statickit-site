@@ -1,22 +1,36 @@
-.markdown h1 {
-  @apply mb-6 text-5xl font-semibold text-gray-900 tracking-snug leading-tight;
-}
-
-.markdown h2 {
-  @apply mt-6 mb-4 text-2xl font-semibold text-gray-900 tracking-snug leading-tight;
-}
-
 .markdown {
-  @apply text-gray-800;
+  @apply leading-relaxed text-gray-700;
 }
 
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown blockquote {
-  @apply mb-4;
+.markdown > h1 {
+  @apply mb-6 text-4xl font-semibold leading-snug tracking-tight text-gray-900;
 }
 
-.markdown ul {
+.markdown > h2 {
+  @apply mt-12 mb-4 text-xl font-semibold tracking-snug text-gray-900;
+}
+
+.markdown > p > a {
+  @apply text-indigo-600 font-semibold;
+}
+
+.markdown > p,
+.markdown > ul,
+.markdown > ol,
+.markdown > blockquote,
+.markdown > pre {
+  @apply mb-6;
+}
+
+.markdown > :not(pre) > code,
+.markdown > p a > code {
+  @apply bg-gray-300 rounded-full px-2 text-sm;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.markdown > .markdown ul {
   @apply list-disc;
 }
