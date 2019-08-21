@@ -35,7 +35,6 @@ Go ahead and replace the contents of the `pages/index.js` file with the followin
 
 ```jsx
 import React from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
 
 const OptInForm = () => {
@@ -117,7 +116,6 @@ Next, import the `useForm` hook and bind the form submit to StaticKit. Be sure t
 
 ```diff
   import React from "react";
-  import Link from "next/link";
   import Head from "next/head";
 + import { useForm } from "@statickit/react";
 
