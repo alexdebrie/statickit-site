@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
 import Header from './header';
 import Footer from './footer';
 import OpenGraph from './open_graph';

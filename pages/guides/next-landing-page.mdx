@@ -1,4 +1,5 @@
 import withGuide from '../../components/with_guide';
+import StepHeading from '../../components/step_heading';
 
 export default withGuide({
   title: 'Building a Landing Page with StaticKit and Next.js',
@@ -9,7 +10,7 @@ export default withGuide({
 
 In this guide, we'll walk through how to create a simple pre-launch landing page to gather email addresses using [StaticKit](https://statickit.com/) and [Next.js](https://nextjs.org/).
 
-## Step 1: Create a new Next.js project
+<StepHeading step="1">Create a new Next.js project</StepHeading>
 
 Run the following command to create a fresh project:
 
@@ -28,7 +29,7 @@ npm run dev
 
 You should see "Welcome to Next.js" when you open [`http://localhost:3000/`](http://localhost:3000/) in your browser.
 
-## Step 2: Design your landing page
+<StepHeading step="2">Design your landing page</StepHeading>
 
 Go ahead and replace the contents of the `pages/index.js` file with the following code. We are using the [Tailwind CSS](https://tailwindcss.com/) framework to style the page. The `<form>` tag is not yet wired up to anything — that's coming next!
 
@@ -100,11 +101,11 @@ const Home = () => (
 export default Home;
 ```
 
-## Step 3: Create your form in StaticKit
+<StepHeading step="3">Create your StaticKit form</StepHeading>
 
 In StaticKit, click **Add a site...** in the top navigation to create a new site for your landing page. Then, click **Add a form...** under your new site to create the form.
 
-## Step 4: Wire up your landing page
+<StepHeading step="4">Wire up your landing page</StepHeading>
 
 From your project directory, run this command:
 
