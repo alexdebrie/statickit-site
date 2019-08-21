@@ -35,7 +35,7 @@ export default meta => ({ children }) => {
 
           <Header pageTitle={meta.title} />
 
-          <div className="mx-auto py-24 px-6 container">
+          <div className="mx-auto py-16 px-6 container">
             <div className="mx-auto max-w-2xl">
               <div className="pb-1">
                 <Link href="/">
