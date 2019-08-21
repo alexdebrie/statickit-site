@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Prism from 'prismjs';
-
-// This import is required to get JSX highlighting working properly:
-// https://github.com/PrismJS/prism/issues/1116#issuecomment-291921678
-import PrismJsx from 'prismjs/components/prism-jsx.min';
-
+import 'prismjs/components/prism-jsx';
+import 'prismjs/components/prism-diff';
 import '../styles/dracula.css';
 
 export default props => {
@@ -13,7 +10,7 @@ export default props => {
   });
 
   return (
-    <pre>
+    <pre className="bg-gray-800 rounded-lg px-4 py-3 overflow-auto">
       <code {...props}>{props.children}</code>
     </pre>
   );

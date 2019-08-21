@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Header from './header';
 import Footer from './footer';
 import OpenGraph from './open_graph';
-import CodeBlock from './code_block';
 import { MDXProvider } from '@mdx-js/react';
 import '../styles/main.css';
 import '../styles/markdown.css';
 
+import Prism from 'prismjs';
+import 'prismjs/components/prism-jsx';
+import 'prismjs/components/prism-diff';
+import '../styles/dracula.css';
+
 const components = {
-  code: CodeBlock
+  pre: props => {
+    useEffect(() => {
+      Prism.highlightAll();
+    });
+
+    return <pre {...props} />;
+  }
 };
 
 export default meta => ({ children }) => {

@@ -21,8 +21,7 @@ pre[class*='language-'] {
 
 /* Code blocks */
 pre[class*='language-'] {
-  @apply rounded-lg px-4 py-3;
-  overflow: auto;
+  @apply bg-gray-800 rounded-lg px-4 py-3 overflow-auto;
 }
 
 :not(pre) > code[class*='language-'],

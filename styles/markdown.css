@@ -22,6 +22,11 @@
   @apply mb-6;
 }
 
+.markdown > pre {
+  @apply rounded-lg px-4 py-3 bg-gray-800;
+  overflow: auto;
+}
+
 .markdown > :not(pre) > code,
 .markdown > p a > code {
   @apply bg-gray-300 rounded-full px-2 text-sm;
