@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import Link from 'next/link';
-import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
@@ -13,17 +10,7 @@ function PricingPage() {
   return (
     <div>
       <main>
-        <Head>
-          <link rel="canonical" href="https://statickit.com/pricing" />
-          <meta
-            property="description"
-            content={description}
-            key="description"
-          />
-        </Head>
-
         <OpenGraph title={title} description={description} path="/pricing" />
-
         <Header pageTitle={title} />
 
         <div className="mx-auto px-6 pt-12 container">

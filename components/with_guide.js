@@ -38,7 +38,7 @@ export default meta => ({ children }) => {
           <div className="mx-auto py-16 px-6 container">
             <div className="mx-auto max-w-2xl">
               <div className="pb-1">
-                <Link href="/">
+                <Link href="/guides">
                   <a className="font-semibold text-indigo-600">Guides</a>
                 </Link>
               </div>

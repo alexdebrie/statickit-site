@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
@@ -36,16 +35,10 @@ function HomePage() {
   return (
     <div>
       <main>
-        <Head>
-          <link rel="canonical" href="https://statickit.com/" />
-          <meta property="description" content={description} />
-        </Head>
-
         <OpenGraph title={title} description={description} path="/" />
-
         <Header pageTitle={title} />
 
-        <div className="mx-auto pt-8 sm:pt-16 container">
+        <div className="mx-auto pt-16 container">
           <div className="pb-16 sm:pb-32 flex flex-wrap">
             <div className="px-6 pb-16 sm:pt-12 sm:pb-0 w-full sm:w-1/2 xl:w-2/5">
               <h1 className="pb-6 text-5xl font-semibold leading-tight tracking-tight">

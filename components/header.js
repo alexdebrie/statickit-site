@@ -10,15 +10,25 @@ export default props => (
     </Head>
     <div className="flex items-center h-10">
       <div className="flex-grow">
-        <a href="/" className="mr-8 block flex flex-shrink-0">
-          <div className="mr-2">
-            <ReactSVG src="/static/logo.svg" />
-          </div>
-          <div className="text-lg text-indigo-700">β</div>
-        </a>
+        <Link href="/">
+          <a className="mr-8 block flex flex-shrink-0">
+            <div className="mr-2">
+              <ReactSVG src="/static/logo.svg" />
+            </div>
+            <div className="text-lg text-indigo-700">β</div>
+          </a>
+        </Link>
       </div>
       <div className="hidden sm:block text-sm text-gray-700">
-        <a href="https://jsfiddle.net/user/StaticKit/fiddles/" className="px-3" target="_blank">
+        <Link href="/guides">
+          <a className="px-3">Guides</a>
+        </Link>
+
+        <a
+          href="https://jsfiddle.net/user/StaticKit/fiddles/"
+          className="px-3"
+          target="_blank"
+        >
           Examples
         </a>
 

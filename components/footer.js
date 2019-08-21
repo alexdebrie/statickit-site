@@ -6,7 +6,15 @@ export default props => (
   <footer className="border-t">
     <div className="mx-auto container px-3 py-10">
       <div className="pb-6 text-sm text-gray-700">
-        <a href="https://jsfiddle.net/user/StaticKit/fiddles/" className="px-3" target="_blank">
+        <Link href="/guides">
+          <a className="px-3">Guides</a>
+        </Link>
+
+        <a
+          href="https://jsfiddle.net/user/StaticKit/fiddles/"
+          className="px-3"
+          target="_blank"
+        >
           Examples
         </a>
 
