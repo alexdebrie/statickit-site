@@ -5,6 +5,7 @@ import { loadFathom, trackPageView } from '../components/analytics';
 
 Router.events.on('routeChangeComplete', url => {
   trackPageView();
+  return true;
 });
 
 Router.events.on('routeChangeError', (err, url) => {
