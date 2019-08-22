@@ -124,7 +124,7 @@ Next, import the `useForm` hook and bind the form submit to StaticKit. Be sure t
   const OptInForm = () => {
 +   const [state, submit] = useForm("[YOUR FORM ID]");
 
-+	  if (state.succeeded) {
++   if (state.succeeded) {
 +     return (
 +       <p className="pb-3 font-bold text-gray-800 text-lg">
 +         Thank you for signing up!

@@ -59,6 +59,11 @@ pre[class*='language-'] {
   color: #ff79c6;
 }
 
+/* Modified to be red */
+.token.deleted {
+  color: #fc8181;
+}
+
 .token.boolean,
 .token.number {
   color: #bd93f9;
