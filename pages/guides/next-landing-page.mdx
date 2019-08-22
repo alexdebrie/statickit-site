@@ -8,7 +8,7 @@ export default withGuide({
   path: '/guides/next-landing-page'
 });
 
-In this guide, we'll walk through how to create a simple pre-launch landing page to gather email addresses using [StaticKit](https://statickit.com/) and [Next.js](https://nextjs.org/).
+In this guide, we'll walk through how to create and deploy a simple pre-launch landing page to gather email addresses using [StaticKit](https://statickit.com/) and [Next.js](https://nextjs.org/).
 
 <StepHeading step="1">Create a new Next.js project</StepHeading>
 
@@ -141,6 +141,16 @@ Next, import the `useForm` hook and bind the form submit to StaticKit. Be sure t
 ```
 
 You now have a working landing page!
+
+<StepHeading step="5">Deploy with ZEIT Now</StepHeading>
+
+If you have not installed Now, you can do so by [installing Now CLI](https://zeit.co/download).
+
+Then, run the Now command to push it live:
+
+```bash
+now
+```
 
 Here's a live, working version of the project:
 
