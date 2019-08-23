@@ -7,9 +7,9 @@ import StandaloneDemo from '../components/standalone_demo';
 import '../styles/main.css';
 
 function HomePage() {
-  const title = 'Simple forms for static sites';
+  const title = 'Modern forms for static sites';
   const description =
-    'Gather form submissions from your app or static site without writing a line of backend code.';
+    'Gather form submissions from your frontend without writing a line of backend code.';
 
   const [tab, setTab] = useState(0);
 
