@@ -10,7 +10,7 @@ function HomePage() {
   const description =
     'Gather form submissions from your frontend without writing a line of backend code.';
 
-  const [tab, setTab] = useState(0);
+  const [tab, setTab] = useState(1);
 
   const tabClass = (idx, selected) => {
     if (idx == selected) {
@@ -60,16 +60,16 @@ function HomePage() {
               <div className="mb-2 w-full rounded-lg text-sm leading-relaxed overflow-auto bg-code">
                 <div className="flex bg-gray-700 rounded-t">
                   <button
-                    className={tabClass(0, tab)}
-                    onClick={() => setTab(0)}
-                  >
-                    Plain HTML
-                  </button>
-                  <button
                     className={tabClass(1, tab)}
                     onClick={() => setTab(1)}
                   >
                     React
+                  </button>
+                  <button
+                    className={tabClass(0, tab)}
+                    onClick={() => setTab(0)}
+                  >
+                    Plain HTML
                   </button>
                 </div>
 
