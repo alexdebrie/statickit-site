@@ -4,7 +4,6 @@ import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
 import ReactDemo from '../components/react_demo';
 import StandaloneDemo from '../components/standalone_demo';
-import '../styles/main.css';
 
 function HomePage() {
   const title = 'Modern forms for static sites';

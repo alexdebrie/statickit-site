@@ -2,7 +2,6 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Link from 'next/link';
 import OpenGraph from '../../components/open_graph';
-import '../../styles/main.css';
 
 function GuidesPage() {
   const title = 'Guides';

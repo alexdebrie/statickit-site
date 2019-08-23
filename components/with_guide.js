@@ -4,13 +4,10 @@ import Header from './header';
 import Footer from './footer';
 import OpenGraph from './open_graph';
 import { MDXProvider } from '@mdx-js/react';
-import '../styles/main.css';
-import '../styles/markdown.css';
 
 import Prism from 'prismjs';
 import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-diff';
-import '../styles/dracula.css';
 
 const components = {
   pre: props => {

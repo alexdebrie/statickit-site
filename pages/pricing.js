@@ -1,7 +1,6 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import OpenGraph from '../components/open_graph';
-import '../styles/main.css';
 
 function PricingPage() {
   const title = 'Pricing';
