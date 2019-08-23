@@ -41,7 +41,7 @@
 }
 
 .input-field {
-  @apply mr-2 px-4 py-3 border border-gray-200 bg-gray-200 rounded-lg leading-tight;
+  @apply px-4 py-3 border border-gray-200 bg-gray-200 rounded-lg leading-tight;
 }
 
 .input-field:focus {

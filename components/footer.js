@@ -38,9 +38,9 @@ export default props => (
           Privacy Policy
         </a>
 
-        <a href="mailto:support@statickit.com" className="px-3">
-          Support
-        </a>
+        <Link href="/support">
+          <a className="px-3">Support</a>
+        </Link>
       </div>
 
       <div className="px-3 flex items-center">
