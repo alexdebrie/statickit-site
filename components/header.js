@@ -24,7 +24,7 @@ export default props => (
     <div className="flex items-center h-10">
       <div className="flex-grow">
         <Link href="/">
-          <a className="mr-8">
+          <a className="flex items-center">
             <span dangerouslySetInnerHTML={{ __html: logo }} />
           </a>
         </Link>
