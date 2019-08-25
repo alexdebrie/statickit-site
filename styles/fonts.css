@@ -2,60 +2,60 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('/static/fonts/Inter-Regular.woff2') format('woff2'),
-    url('/static/fonts/Inter-Regular.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-Regular.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Inter';
   font-style: italic;
   font-weight: 400;
-  src: url('/static/fonts/Inter-Italic.woff2') format('woff2'),
-    url('/static/fonts/Inter-Italic.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-Italic.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-Italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('/static/fonts/Inter-Medium.woff2') format('woff2'),
-    url('/static/fonts/Inter-Medium.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-Medium.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-Medium.woff') format('woff');
 }
 @font-face {
   font-family: 'Inter';
   font-style: italic;
   font-weight: 500;
-  src: url('/static/fonts/Inter-MediumItalic.woff2') format('woff2'),
-    url('/static/fonts/Inter-MediumItalic.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-MediumItalic.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-MediumItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url('/static/fonts/Inter-SemiBold.woff2') format('woff2'),
-    url('/static/fonts/Inter-SemiBold.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-SemiBold.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-SemiBold.woff') format('woff');
 }
 @font-face {
   font-family: 'Inter';
   font-style: italic;
   font-weight: 600;
-  src: url('/static/fonts/Inter-SemiBoldItalic.woff2') format('woff2'),
-    url('/static/fonts/Inter-SemiBoldItalic.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-SemiBoldItalic.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-SemiBoldItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('/static/fonts/Inter-Bold.woff2') format('woff2'),
-    url('/static/fonts/Inter-Bold.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-Bold.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Inter';
   font-style: italic;
   font-weight: 700;
-  src: url('/static/fonts/Inter-BoldItalic.woff2') format('woff2'),
-    url('/static/fonts/Inter-BoldItalic.woff') format('woff');
+  src: url('/static/fonts/inter-3.9/Inter-BoldItalic.woff2') format('woff2'),
+    url('/static/fonts/inter-3.9/Inter-BoldItalic.woff') format('woff');
 }
 
 /* --------------------------------------------------------------------------
@@ -75,5 +75,5 @@ explicitly, e.g.
   font-family: 'Inter var experimental';
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
-  src: url('/static/fonts/Inter.var.woff2') format('woff2');
+  src: url('/static/fonts/inter-3.9/Inter.var.woff2') format('woff2');
 }
