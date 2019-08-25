@@ -19,7 +19,7 @@ export default props => (
   <header className="mx-auto container px-6 py-4">
     <Head>
       <title>{props.pageTitle} · StaticKit</title>
-      <link rel="shortcut icon" href="/static/favicon.png"></link>
+      <link rel="shortcut icon" href="/static/favicon.ico"></link>
     </Head>
     <div className="flex items-center h-10">
       <div className="flex-grow">
