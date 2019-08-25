@@ -3,6 +3,7 @@ import App, { Container } from 'next/app';
 import Router from 'next/router';
 import { loadFathom, trackPageView } from '../components/analytics';
 
+import '../styles/fonts.css';
 import '../styles/main.css';
 import '../styles/markdown.css';
 import '../styles/dracula.css';
