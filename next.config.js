@@ -8,7 +8,8 @@ module.exports = withMDX(
     target: 'serverless',
     env: {
       STATICKIT_URL: process.env.STATICKIT_URL,
-      FORM_ID: process.env.FORM_ID
+      FORM_ID: process.env.FORM_ID,
+      ENABLE_ANALYTICS: process.env.ENABLE_ANALYTICS
     },
     pageExtensions: ['js', 'jsx', 'mdx', 'md']
   })
