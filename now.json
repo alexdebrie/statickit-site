@@ -7,7 +7,8 @@
   "build": {
     "env": {
       "STATICKIT_URL": "https://api.statickit.com",
-      "FORM_ID": "0858b1a135b0"
+      "FORM_ID": "0858b1a135b0",
+      "ENABLE_ANALYTICS": "1"
     }
   },
   "routes": [

@@ -1,4 +1,5 @@
 function loadFathom() {
+  if (disableAnalytics()) return;
   if (window.fathom) return;
 
   safelyInitializeFathom();
@@ -16,6 +17,8 @@ function loadFathom() {
 }
 
 function trackPageView() {
+  if (disableAnalytics()) return;
+
   try {
     safelyInitializeFathom();
     window.fathom('trackPageview');
@@ -26,11 +29,17 @@ function trackPageView() {
 }
 
 function safelyInitializeFathom() {
+  if (disableAnalytics()) return;
+
   window.fathom =
     window.fathom ||
     function() {
       (fathom.q = fathom.q || []).push(arguments);
     };
+}
+
+function disableAnalytics() {
+  return process.env.ENABLE_ANALYTICS !== '1';
 }
 
 export { loadFathom, trackPageView };
