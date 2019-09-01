@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "statickit-site",
-  "scope": "statickit",
+  "scope": "levelhq",
   "alias": ["statickit.com", "www.statickit.com"],
   "builds": [{ "src": "package.json", "use": "@now/next" }],
   "build": {
