@@ -24,7 +24,7 @@ export default props => (
     <meta property="og:site_name" content="StaticKit" key="og:site_name" />
     <meta
       property="og:image"
-      content="https://statickit.com/static/logo-300.png"
+      content="https://statickit.com/static/logo-inverted-300.png"
       key="og:image"
     />
     <meta property="og:image:width" content="300" key="og:image:width" />
