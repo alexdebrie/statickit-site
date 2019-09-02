@@ -1,0 +1,114 @@
+import withGuide from '../../components/with_guide';
+import StepHeading from '../../components/step_heading';
+import BrowserDemo from '../../components/browser_demo';
+
+export default withGuide({
+  title: 'Using Tailwind CSS with Next.js',
+  description:
+    "In this guide, you'll learn how to install Tailwind CSS in a Next.js project",
+  path: '/guides/next-js-tailwind'
+});
+
+In this guide, we'll walk through how to install [Tailwind CSS](https://tailwindcss.com/) in a new [Next.js](https://nextjs.org/) project.
+
+Here's a working version of what you'll end up creating:
+
+<BrowserDemo
+  url="https://next-js-tailwind.levelhq.now.sh"
+  label="next-js-tailwind.levelhq.now.sh"
+/>
+
+<StepHeading step="1">Create a new Next.js project</StepHeading>
+
+Run the following command to create a fresh project:
+
+```bash
+npm create next-app next-js-tailwind
+```
+
+This command will make a new directory, add a `package.json` file with the necessary dependencies and script definitions, and scaffold a sample home page for you.
+
+To boot up your local development server, run the following:
+
+```bash
+cd next-js-tailwind
+npm run dev
+```
+
+You should see "Welcome to Next.js" when you open [`http://localhost:3000/`](http://localhost:3000/) in your browser.
+
+<StepHeading step="2">Install dependencies</StepHeading>
+
+Run the following to install Tailwind and its other dependencies:
+
+```bash
+npm install tailwindcss autoprefixer postcss-loader --save-dev
+```
+
+You'll also need to install the `next-css` plugin:
+
+```bash
+npm install @zeit/next-css
+```
+
+<StepHeading step="3">Configure the build pipeline</StepHeading>
+
+Create a `postcss.config.js` file with the following:
+
+```js
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer')
+  ]
+};
+```
+
+Then, create a `next.config.js` file and wrap your config with the `withCSS` function:
+
+```js
+const withCSS = require('@zeit/next-css');
+
+module.exports = withCSS({});
+```
+
+This tells Next.js to process CSS files that you `import` in your code.
+
+<StepHeading step="4">Add Tailwind to your CSS</StepHeading>
+
+Create a CSS file in a `styles` directory and add the Tailwind directives:
+
+```bash
+mkdir styles && touch styles/main.css
+
+cat >styles/main.css <<EOL
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+EOL
+```
+
+<StepHeading step="5">Import your CSS</StepHeading>
+
+Open up `pages/index.js` and add your import:
+
+```diff
+  import React from 'react'
+  import Link from 'next/link'
+  import Head from 'next/head'
+  import Nav from '../components/nav'
++
++ import '../styles/main.css'
+
+  const Home = () => (
+    <div>
+      <Head>
+        <title>Home</title>
+      </Head>
+```
+
+Eventually, you may wish to import your CSS in a [custom `<App>` component](https://nextjs.org/docs#custom-app) to ensure it gets loaded on every page.
+
+You can now start using Tailwind CSS utilities in your `className` attributes!
+
+[Check out the source on GitHub →](https://github.com/levelhq/next-js-tailwind)

@@ -12,6 +12,12 @@ function GuidesPage() {
       description:
         "In this guide, you'll learn how to create a simple landing page to gather email addresses using StaticKit and Next.js",
       path: '/guides/next-landing-page'
+    },
+    {
+      title: 'Using Tailwind CSS with Next.js',
+      description:
+        "In this guide, you'll learn how use Tailwind CSS with Next.js",
+      path: '/guides/next-js-tailwind'
     }
   ];
 
